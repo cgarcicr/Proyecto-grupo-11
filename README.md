@@ -19,5 +19,9 @@
    **Descripción:**      *Amante de las motocicletas y los video juegos.*&nbsp;  
    **Lugar residencia:** *Medellin - Colombia*&nbsp;  
 
+2. **Nombre:**           *Fernando "Javier" Fernandez*&nbsp;  
+   **Descripción:**      *Amaba leer Fantasy, Ciencia Ficcion, Novelas, policiales... hasta que empecé este curso y adiós al tiempo de lectura recreativa. Trabajo en sistemas, infraestructura Windows. *&nbsp;  
+   **Lugar residencia:** *Ciudad de Buenos Aires - Argentina*&nbsp;
+
 ## Link del tablero de trello
 [Tablero de Trello](https://trello.com/b/OHfEc1oW/grupo-11)
