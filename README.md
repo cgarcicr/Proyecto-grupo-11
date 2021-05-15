@@ -1,6 +1,8 @@
 # PROYECTO GRUPO 11
 
 ## Temática y descripción del sitio
+*Cannabis medicinal. Tienda virtual dedicada a la venta de productos medicinales elaborados a base de cannabis.
+Aquí podrán encontrar la más completa y variada gama de productos para la salud capilar, corporal, facial y sexual. Nuestros productos provienen de los principales laboratoris autorizados de la región.*&nbsp; 
 
 ## Público objetivo
 
