@@ -24,6 +24,10 @@ Aquí podrán encontrar la más completa y variada gama de productos para la sal
 2. **Nombre:**           *Fernando "Javier" Fernandez*&nbsp;  
    **Descripción:**      *Amaba leer Fantasy, Ciencia Ficcion, Novelas, policiales... hasta que empecé este curso y adiós al tiempo de lectura recreativa. Trabajo en sistemas, infraestructura Windows. *&nbsp;  
    **Lugar residencia:** *Ciudad de Buenos Aires - Argentina*&nbsp;
+   
+3. **Nombre:**           *Leandro Carballo*&nbsp;  
+   **Descripción:**      *Me gusta disfrutar de la naturaleza y los bellos paisajes.*&nbsp;  
+   **Lugar residencia:** *Rio Cuarto - Cordoba - Argentina*&nbsp;
 
 ## Link del tablero de trello
 [Tablero de Trello](https://trello.com/b/OHfEc1oW/grupo-11)
