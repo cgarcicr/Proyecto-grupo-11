@@ -22,7 +22,7 @@ Apuntamos a un amplio público con conocimiento de los productos y a los que aú
    **Lugar residencia:** *Medellin - Colombia*&nbsp;  
 
 2. **Nombre:**           *Fernando "Javier" Fernandez*&nbsp;  
-   **Descripción:**      *Amaba leer Fantasy, Ciencia Ficcion, Novelas, policiales... hasta que empecé este curso y adiós al tiempo de lectura recreativa. Trabajo en sistemas, infraestructura Windows. *&nbsp;  
+   **Descripción:**      *Amaba leer Fantasy, Ciencia Ficcion, Novelas, policiales... hasta que empecé este curso y adiós al tiempo de lectura recreativa. Trabajo en sistemas, infraestructura Windows.*&nbsp;  
    **Lugar residencia:** *Ciudad de Buenos Aires - Argentina*&nbsp;
    
 3. **Nombre:**           *Leandro Carballo*&nbsp;  
@@ -30,8 +30,8 @@ Apuntamos a un amplio público con conocimiento de los productos y a los que aú
    **Lugar residencia:** *Rio Cuarto - Cordoba - Argentina*&nbsp;
 
 4. **Nombre:**           *Carlos Andres Añasco*&nbsp;  
-   **Descripción:**      *me gustan las series, los juegos y mis gatos. *&nbsp;  
-   **Lugar residencia:** *Moreno-Provincia De Buenos Aires - Argentina. *&nbsp;
+   **Descripción:**      *me gustan las series, los juegos y mis gatos.*&nbsp;  
+   **Lugar residencia:** *Moreno-Provincia De Buenos Aires - Argentina.*&nbsp;
 
 ## Link del tablero de trello
 [Tablero de Trello](https://trello.com/b/OHfEc1oW/grupo-11)
