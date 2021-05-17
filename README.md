@@ -5,7 +5,7 @@
 Aquí podrán encontrar la más completa y variada gama de productos para la salud capilar, corporal, facial y sexual. Nuestros productos provienen de los principales laboratoris autorizados de la región.*&nbsp; 
 
 ## Público objetivo
-
+Apuntamos a un amplio público con conocimiento de los productos y a los que aún no lo conocen, personas desde los 25 años, de nivel adquisitivo medio-alto. 
 ## Listado páginas referentes
 
 [Uso Medicinal Cannabis](https://www.fundacion-canna.es/uso-medicinal-de-cannabis)&nbsp;  
