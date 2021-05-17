@@ -31,7 +31,7 @@ Apuntamos a un amplio público con conocimiento de los productos y a los que aú
 
 4. **Nombre:**           *Carlos Andres Añasco*&nbsp;  
    **Descripción:**      *me gustan las series, los juegos y mis gatos. *&nbsp;  
-   **Lugar residencia:** *Moreno - Provincia De Auenos Aires - Argentina. *&nbsp;
+   **Lugar residencia:** *Moreno-Provincia De Buenos Aires - Argentina. *&nbsp;
 
 ## Link del tablero de trello
 [Tablero de Trello](https://trello.com/b/OHfEc1oW/grupo-11)
