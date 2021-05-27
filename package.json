@@ -1,0 +1,22 @@
+{
+  "name": "proyecto-grupo-11",
+  "version": "1.0.0",
+  "description": "*Cannabis-Market. Tienda virtual dedicada a la venta de productos medicinales elaborados a base de cannabis.\r Aquí podrán encontrar la más completa y variada gama de productos para la salud capilar, corporal, facial y sexual. Nuestros productos provienen de los principales laboratoris autorizados de la región.*&nbsp;",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cgarcicr/Proyecto-grupo-11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cgarcicr/Proyecto-grupo-11/issues"
+  },
+  "homepage": "https://github.com/cgarcicr/Proyecto-grupo-11#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
