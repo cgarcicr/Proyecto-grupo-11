@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.parte1{
+    background-image: url("/images/fondo4.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    margin: auto;
+}
+.logo{
+    width: 18%;
+    height: 20%;
+}
+.nombre{
+    font-size: 2em;
+    color:#1f6c41;
+    padding-top: 5%;
+    
+}
+.parte2{
+    background-color:#aecd38;
+    color: #37352f;
+    height: auto;
+    font-size: 150%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.nav1{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.navpri{
+    background-color: #D3D3D3;
+    color:#37352f;
+    text-decoration: none; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.maincarru{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    background-image: url("/images/fondo5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#carrusel {
+    float:left;
+    width:350px;
+    overflow:hidden;
+    height:250px;
+    position:relative;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+ 
+#carrusel .left-arrow {
+    position:absolute;
+    left:15px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+ 
+#carrusel .right-arrow {
+    position:absolute;
+    right:15px;
+    z-index:1;
+    top:50%;
+    margin-top:-9px;
+}
+ 
+.carrusel {
+    width:4000px;
+    left:0px;
+    position:relative;
+    z-index:0;
+}
+ .main{
+     text-align: center;
+ }
+.carrusel>div {
+    float: left;
+    height: 203px;
+    margin-right: 5px;
+    width: 195px;
+    text-align:center;
+}
+ 
+.carrusel img {
+    cursor:pointer;
+}
+ 
+.product {
+    background-color: #aecd38;
+    color: #37352f;
+    font-weight: bold;
+}
+
+
+.news{
+    color: #37352f;
+    background-color: #D3D3D3;
+    text-align: center;
+    padding:5%;
+}
+
+
+footer{
+    background-image: url("/images/fondo4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.parte31{
+    display: flex;
+    justify-content: flex-start;
+}
+.finleft{
+    flex-direction: column;
+    padding-left: 2%;
+  
+}
+
+.logofin{
+    width: 40%;
+    height: 40%;
+    padding-top: 10%;
+}
+.nombrefin{
+    color:#1f6c41;
+    padding-top: 15%;
+    padding-left: 2%;
+}
+
+.info{
+    color: #37352f;
+}
+.fin{
+    flex-direction: column;
+    padding-right: 1%;
+    font-weight: bold;
+    
+}
+.lisfin{
+    color: #37352f; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 12%;
+    padding-right: 3%;
+    padding-top: 7%;
+    height: 15px;
+}
+.footnav{
+    color: #37352f;
+    font-size: 90%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (min-width: 460px){
+   }
+   @media (min-width: 768px){
+    .news{
+        font-size: 120%;
+    }
+    .fin{
+        font-size: 130%;
+    }
+   }
+   
