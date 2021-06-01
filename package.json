@@ -19,8 +19,5 @@
   "dependencies": {
     "express": "^4.17.1",
     "node-modules": "^1.0.1"
-  },
-  "keywords": []
-    "nodemon": "^2.0.7"
   }
 }
