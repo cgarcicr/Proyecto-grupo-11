@@ -7,10 +7,10 @@ Reunión diaria que se realiza con los integrantes del equipo, (En el momento no
 **¿Qué hice ayer?:**
 *No realicé ninguna actividad debido a incapacidad por covid-19 positivo.*&nbsp; 
 
-**¿Tuve impedimentos para lograr mis objetivos?**
+**¿Tuve impedimentos para lograr mis objetivos?:**
 *Si, la incapacidad por temas de salud.*&nbsp; 
 
-**¿Qué voy a hacer hoy?**
+**¿Qué voy a hacer hoy?:**
 *Actualizar archivo retro.md, ajustar el proyecto a la arquitectura MVC, crear archivo daily.md, actualizar tablero de trello y demás tareas despues de realizar la reunión de equipo.*&nbsp; 
 
 ---
@@ -19,10 +19,10 @@ Reunión diaria que se realiza con los integrantes del equipo, (En el momento no
 **¿Qué hice ayer?:**
 *Respuesta*&nbsp; 
 
-**¿Tuve impedimentos para lograr mis objetivos?**
+**¿Tuve impedimentos para lograr mis objetivos?:**
 *Respuesta*&nbsp; 
 
-**¿Qué voy a hacer hoy?**
+**¿Qué voy a hacer hoy?:**
 *Respuesta*&nbsp; 
 
 ---
@@ -31,10 +31,10 @@ Reunión diaria que se realiza con los integrantes del equipo, (En el momento no
 **¿Qué hice ayer?:**
 *Respuesta*&nbsp; 
 
-**¿Tuve impedimentos para lograr mis objetivos?**
+**¿Tuve impedimentos para lograr mis objetivos?:**
 *Respuesta*&nbsp; 
 
-**¿Qué voy a hacer hoy?**
+**¿Qué voy a hacer hoy?:**
 *Respuesta*&nbsp; 
 
 ---
@@ -43,8 +43,8 @@ Reunión diaria que se realiza con los integrantes del equipo, (En el momento no
 **¿Qué hice ayer?:**
 *Respuesta*&nbsp; 
 
-**¿Tuve impedimentos para lograr mis objetivos?**
+**¿Tuve impedimentos para lograr mis objetivos?:**
 *Respuesta*&nbsp; 
 
-**¿Qué voy a hacer hoy?**
+**¿Qué voy a hacer hoy?:**
 *Respuesta*&nbsp; 
