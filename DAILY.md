@@ -29,13 +29,13 @@ Reunión diaria que se realiza con los integrantes del equipo, (En el momento no
 
 **Nombre:** *Leandro Carballo*&nbsp;  
 **¿Qué hice ayer?:**
-*Respuesta*&nbsp; 
+*No realice actividad referida a este trabajo.*&nbsp; 
 
 **¿Tuve impedimentos para lograr mis objetivos?:**
-*Respuesta*&nbsp; 
+*Falta de tiempo para ponerme a trabajar en el proyecto. *&nbsp; 
 
 **¿Qué voy a hacer hoy?:**
-*Respuesta*&nbsp; 
+*Mejorar la estetica del sitio, reunion con el equipo de trabajo y realizar actividades que me sean asignadas.*&nbsp; 
 
 ---
 
