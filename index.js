@@ -1,22 +1,16 @@
 const express = require('express');
-const app = express();
-const { dirname } = require('path');
 const path = require('path');
 
-app.use( express.static( path.resolve(__dirname, './public') ) );
-
-app.get( '/',  ( req, res )=>{
-    res.sendFile( path.resolve(__dirname, './views/index.html') );
-});
-
-app.get( '/login',  ( req, res )=>{
-    res.sendFile( path.resolve(__dirname, './views/login.html') );
-});
-
-app.get( '/registro', ( req, res)=>{
-    res.sendFile( path.resolve(__dirname, './views/registro.html') );
-});
+//Crear el servidor con express
+const app = express();
 
 app.listen( 3000, ()=>{
     console.log('Servidor escuchando por el puerto 3000');
 } );
+
+app.use( express.static( path.resolve(__dirname, './public') ) );
+
+//Routes
+app.use( '/cannabis-market', require( './routes/main' ) );
+app.use( '/cannabis-market/login', require( './routes/login' ) );
+app.use( '/cannabis-market/registro', require( './routes/registro' ) );
