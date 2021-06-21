@@ -12,37 +12,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 </head>
-<body>
-    <div class="cuadro">
-        <header class="tituloLogin">
-            <h2>Ingresar Nuevo Producto</h2>
-            <hr class="lineaTitulo">
-        </header>
-        <div class="cuadroFormulario">
-            <section >
-                <div>
-                    <a class="enlace" href="#">Ingresar datos del producto</a>
-                </div>
-                <form action="#" ></form>
-                    <p>Nombre del producto</p>
-                    <input class="cajaDatos" type="text">
-                    <p>Descripción</p>
-                    <input class="cajaDatos" type="text">
-                    <p>Precio</p>
-                    <input class="cajaDatos" type="text">
-                    <p>Descuento</p>
-                    <input class="cajaDatos" type="text">
-                    <p>Imagen</p>
-                    <input class="cajaDatos" type="file" name="archi">
-                    <br>
-                    <div class="boton">
-                        <button>Guardar</button>
+    <body>
+        <%- include('../partials/header') %>
+        <div class="cuadro">
+            <header class="tituloLogin">
+                <h2>Ingresar Nuevo Producto</h2>
+                <hr class="lineaTitulo">
+            </header>
+            <div class="cuadroFormulario">
+                <section >
+                    <div>
+                        <a class="enlace" href="#">Ingresar datos del producto</a>
                     </div>
-                </form>
-            </section>
-            <footer>
-            </footer>
+                    <form action="#" ></form>
+                        <p>Nombre del producto</p>
+                        <input class="cajaDatos" type="text">
+                        <p>Descripción</p>
+                        <input class="cajaDatos" type="text">
+                        <p>Precio</p>
+                        <input class="cajaDatos" type="text">
+                        <p>Descuento</p>
+                        <input class="cajaDatos" type="text">
+                        <p>Imagen</p>
+                        <input class="cajaDatos" type="file" name="archi">
+                        <br>
+                        <div class="boton">
+                            <button>Guardar</button>
+                        </div>
+                    </form>
+                </section>
+                <footer>
+                </footer>
+            </div>
         </div>
-    </div>
+        <%- include('../partials/footer') %>
     </body>
 </html>
