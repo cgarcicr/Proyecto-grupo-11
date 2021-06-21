@@ -5,7 +5,8 @@ const { request, response } = require('express');
 const path = require('path');
 
 let  obtenerLogin = ( req, res = response)=>{
-    res.render( path.resolve(__dirname, '../views/users/login') );
+    //res.render( path.resolve(__dirname, '../views/users/login') );
+    res.render('users/login');
 }
 
 module.exports = { obtenerLogin }
