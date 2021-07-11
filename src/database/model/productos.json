@@ -40,19 +40,5 @@
   "descripcion": "Delta 100% para evitar dolores ",
   "precio": "$120",
   "imagen": "/images/capsulas_extracto_equilibrium.png"
- },
- {
-  "id": 7,
-  "nombre": "Locion",
-  "descripcion": "Locion cannabis cbd",
-  "precio": "$20",
-  "imagen": "/images/capsulas_extracto_equilibrium.png"
- },
- {
-  "id": 8,
-  "nombre": "Pomada Caliente",
-  "descripcion": "Ninguna",
-  "precio": "3",
-  "imagen": "/images/capsulas_extracto_equilibrium.png"
  }
 ]

@@ -58,9 +58,22 @@ let modificarProducto = ( req = request, res = response )=>{
             console.log( 'Actualizado' );
         }
     });
-    res.redirect(`/cannabis-market/productos/editarProducto/${ id }`, {
+    res.redirect(`/cannabis-market/productos/editarProducto/${ id }`);
+}
+
+let borrarProducto = ( req = request, res = response )=>{
+    let { id } = req.params
+    let listaProductos = productosJson.filter( resp => resp.id != id);
+    fs.writeFile('./src/database/model/productos.json', JSON.stringify( listaProductos, null, ' ' ), ( err )=>{
+        if( err ){
+            console.log( 'El error es: ' + err);
+        }else{
+            console.log( 'Actualizado' );
+        }
+    });
+    res.render('products/listadoProducto',{
         ok: true,
-        msg: 'Producto actualizado!'
+        listaProductos
     });
 }
 
@@ -84,4 +97,4 @@ let obtenerProducto = ( req = request, res = response)=>{
 }
 
 
-module.exports = { nuevoProducto, editarProducto, listarProductos, obtenerProducto, crearProducto, modificarProducto };
+module.exports = { nuevoProducto, editarProducto, listarProductos, obtenerProducto, crearProducto, modificarProducto, borrarProducto };
