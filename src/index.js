@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const methodOverride = require('method-override');
@@ -11,8 +12,8 @@ app.set('view engine','ejs');
 //Configurar carpeta donde está las vistas
 app.set('views', './src/views');
 
-app.listen( process.env.PORT || 3000, ()=>{
-    console.log('Servidor escuchando por el puerto 3000');
+app.listen( process.env.PORT || 3005, ()=>{
+    console.log('Servidor escuchando por el puerto ' + process.env.PORT);
 } );
 
 //app.use( express.static( path.resolve(__dirname, '../public') ) );
