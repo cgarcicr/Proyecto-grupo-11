@@ -24,18 +24,19 @@
                     <div>
                         <a class="enlace" href="#">Ingresar datos del producto</a>
                     </div>
-                    <form action="#" ></form>
+                    <form method="POST" action="/cannabis-market/productos/nuevoProducto" >
                         <p>Nombre del producto</p>
-                        <input class="cajaDatos" type="text">
+                        <input class="cajaDatos" type="text" name="nombre">
                         <p>Descripción</p>
-                        <input class="cajaDatos" type="text">
+                        <input class="cajaDatos" type="text" name="descripcion">
                         <p>Precio</p>
-                        <input class="cajaDatos" type="text">
+                        <input class="cajaDatos" type="text" name="precio">
                         <p>Imagen</p>
-                        <input class="cajaDatos" type="file" name="archi">
+                        <!-- <input class="cajaDatos" type="file" name="archi"> -->
                         <br>
                         <div class="boton">
-                            <button>Guardar</button>
+                            <button type="submit">Guardar</button>
+                            <!-- <input type="submit" value="Guardar"> -->
                         </div>
                     </form>
                 </section>

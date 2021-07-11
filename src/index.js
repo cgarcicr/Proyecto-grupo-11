@@ -17,6 +17,10 @@ app.listen( 3000, ()=>{
 //app.use( express.static( path.resolve(__dirname, '../public') ) );
 app.use( express.static('public') );
 
+//Captura de información en formularios
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
 //Routes
 app.use( '/cannabis-market', require( './routes/main' ) );
 app.use( '/cannabis-market/login', require( './routes/login' ) );

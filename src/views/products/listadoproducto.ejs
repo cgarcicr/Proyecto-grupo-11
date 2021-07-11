@@ -14,7 +14,9 @@
     </head>
 <body>
     <%- include('../partials/header') %>
-
+        <div class="contador">
+            <p>Cantidad productos: <%= listaProductos.length%></p>
+        </div>
         <div class="card-productos">
             <% listaProductos.forEach( ( producto) =>{ %>
                 <a href="/cannabis-market/productos/obtenerProducto/<%=producto.id%>">
