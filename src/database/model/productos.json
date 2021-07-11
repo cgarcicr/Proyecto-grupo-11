@@ -50,9 +50,9 @@
  },
  {
   "id": 8,
-  "nombre": "aaa",
-  "descripcion": "aaa",
-  "precio": "$aaa",
+  "nombre": "Pomada Caliente",
+  "descripcion": "Ninguna",
+  "precio": "3",
   "imagen": "/images/capsulas_extracto_equilibrium.png"
  }
 ]

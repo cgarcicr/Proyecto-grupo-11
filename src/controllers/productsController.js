@@ -33,8 +33,36 @@ let crearProducto = ( req = request, res = response)=>{
 }
 
 let editarProducto = ( req, res = response)=>{
-    res.render('products/editarProducto');
+    let { id } = req.params
+    let producto = productosJson.filter( resp=> resp.id == id);
+    res.render('products/editarProducto',{
+        ok: true,
+        producto
+    });
 };
+
+let modificarProducto = ( req = request, res = response )=>{
+    let listaProductos = productosJson;
+    let { id, nombre, descripcion, precio } = req.body;
+    listaProductos.forEach(element => {
+        if( element.id == id){
+            element.nombre = nombre;
+            element.descripcion = descripcion;
+            element.precio = precio
+            }
+    });
+    fs.writeFile('./src/database/model/productos.json', JSON.stringify( listaProductos, null, ' ' ), ( err )=>{
+        if( err ){
+            console.log( 'El error es: ' + err);
+        }else{
+            console.log( 'Actualizado' );
+        }
+    });
+    res.redirect(`/cannabis-market/productos/editarProducto/${ id }`, {
+        ok: true,
+        msg: 'Producto actualizado!'
+    });
+}
 
 let listarProductos = ( req, res = response )=>{
     let listaProductos = productosJson;
@@ -48,7 +76,6 @@ let listarProductos = ( req, res = response )=>{
 let obtenerProducto = ( req = request, res = response)=>{
     let { id } = req.params;
     let producto = productosJson.filter( resp => resp.id == id );
-    console.log( producto );
     res.render( 'products/detalleProducto',
     {
         ok:true,
@@ -57,4 +84,4 @@ let obtenerProducto = ( req = request, res = response)=>{
 }
 
 
-module.exports = { nuevoProducto, editarProducto, listarProductos, obtenerProducto, crearProducto };
+module.exports = { nuevoProducto, editarProducto, listarProductos, obtenerProducto, crearProducto, modificarProducto };

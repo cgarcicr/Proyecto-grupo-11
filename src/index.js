@@ -1,5 +1,6 @@
 const express = require('express');
 const path = require('path');
+const methodOverride = require('method-override');
 
 //Crear el servidor con express
 const app = express();
@@ -20,6 +21,9 @@ app.use( express.static('public') );
 //Captura de información en formularios
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+//Sobre escribir método original forms
+app.use(methodOverride('_method'));
 
 //Routes
 app.use( '/cannabis-market', require( './routes/main' ) );

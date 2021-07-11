@@ -386,3 +386,27 @@ section div button{
     display: block;
     width: 100%;
 }
+
+.botonEditar{
+    margin-top: 8px;
+    color: white;
+    background-color: yellowgreen;
+    border: none;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.botonEliminar{
+    margin-top: 8px;
+    color: white;
+    background-color: rgb(49, 48, 48);
+    border: none;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+.ocultarCampos{
+    display: none;
+}

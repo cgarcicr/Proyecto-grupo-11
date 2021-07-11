@@ -24,18 +24,20 @@
                     <div>
                         <a class="enlace" href="#">Ingresar datos a modificar</a>
                     </div>
-                    <form action="#" ></form>
+                    <form method="POST" action="/cannabis-market/productos/editarProducto?_method=PUT" >
+                        <p class="ocultarCampos">Identificador</p>
+                        <input class="ocultarCampos" type="text" name="id" value="<%=producto[0].id%>">
                         <p>Nombre del producto</p>
-                        <input class="cajaDatos" type="text">
+                        <input class="cajaDatos" type="text" name="nombre" value="<%=producto[0].nombre%>">
                         <p>Descripción</p>
-                        <input class="cajaDatos" type="text">
+                        <input class="cajaDatos" type="text" name="descripcion" value="<%=producto[0].descripcion%>">
                         <p>Precio</p>
-                        <input class="cajaDatos" type="text">
-                        <p>Imagen</p>
-                        <input class="cajaDatos" type="file" name="archi">
+                        <input class="cajaDatos" type="text" name="precio" value="<%=producto[0].precio%>">
+                        <!-- <p>Imagen</p>
+                        <input class="cajaDatos" type="file" name="archi"> -->
                         <br>
                         <div class="boton">
-                            <button>Modificar Producto</button>
+                            <button type="submit">Modificar Producto</button>
                         </div>
                     </form>
                 </section>
