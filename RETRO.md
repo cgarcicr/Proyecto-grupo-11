@@ -1,5 +1,22 @@
 # PROYECTO GRUPO 11
 
+## Retrospectiva Sprint 3
+Análizar como se está llevando el trabajo en equipo, respondiendo las siguientes preguntas:&nbsp; 
+
+### ¿Qué comenzar a hacer?
+*Más reuniones con el equipo, ya que afectó el desarrollo de algunas de las actividades del sprint.*&nbsp; 
+
+### ¿Qué continuar haciendo?
+*La responsabilidad y las ganas de realizar la entrega del sprint a tiempo.*&nbsp; 
+
+### ¿Qué hacer menos?
+*Solo tenemos comunicación en el momento de las clases, el resto del tiempo, no tenemos encuentros para avanzar en el proyecto*&nbsp; 
+
+### ¿Qué dejar de hacer?
+*La ausencia tan marcada en este sprint, y la poca participación en las actividades.*&nbsp; 
+
+---
+
 ## Retrospectiva Sprint 2
 Análizar como se está llevando el trabajo en equipo, respondiendo las siguientes preguntas:&nbsp; 
 
