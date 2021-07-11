@@ -1,1 +1,3 @@
-web: node ./src/index.js
+web: node app.js
+
+web: node ./src/app.js
