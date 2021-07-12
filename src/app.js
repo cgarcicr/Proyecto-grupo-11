@@ -10,7 +10,7 @@ const app = express();
 app.set('view engine','ejs');
 
 //Configurar carpeta donde está las vistas
-app.set('views', 'src/views/');
+app.set('views', 'src/views');
 
 app.listen( process.env.PORT || 3005, ()=>{
     console.log( 'Servidor escuchando por el puerto ' + process.env.PORT );

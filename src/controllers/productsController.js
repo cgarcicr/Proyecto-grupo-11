@@ -81,7 +81,7 @@ let borrarProducto = ( req = request, res = response )=>{
 
 let listarProductos = ( req, res = response )=>{
     let listaProductos = productosJson;
-    res.render('products/listadoProducto',
+    res.render('./products/listadoProducto',
     {
         ok: true,
         listaProductos
