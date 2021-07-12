@@ -31,14 +31,14 @@
   "id": 5,
   "nombre": "Gel para el dolor 120 GR",
   "imagen": "/images/gel_dolor.png",
-  "precio": "$25.00",
+  "precio": "$28.00",
   "descripcion": "Aplicar 3 veces al día en la zona afectada, alivia el dolor y la tensión."
  },
  {
   "id": 6,
-  "nombre": "Capsulas extracto delta",
-  "descripcion": "Delta 100% para evitar dolores ",
-  "precio": "$120",
+  "nombre": "Prueba",
+  "descripcion": "Prueba",
+  "precio": "$120.00",
   "imagen": "/images/capsulas_extracto_equilibrium.png"
  }
 ]

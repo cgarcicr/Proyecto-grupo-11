@@ -29,7 +29,7 @@ let crearProducto = ( req = request, res = response)=>{
                 console.log( 'Actualizado' );
             }
         });
-    res.redirect('/cannabis-market/productos');
+    res.redirect('/productos');
 }
 
 let editarProducto = ( req, res = response)=>{
@@ -58,7 +58,7 @@ let modificarProducto = ( req = request, res = response )=>{
             console.log( 'Actualizado' );
         }
     });
-    res.redirect(`/cannabis-market/productos/editarProducto/${ id }`);
+    res.redirect(`/productos/editarProducto/${ id }`);
 }
 
 let borrarProducto = ( req = request, res = response )=>{

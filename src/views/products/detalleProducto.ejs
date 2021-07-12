@@ -24,8 +24,8 @@
             <p><%=producto[0].descripcion%></p>
             <label for="cantidad">Cantidad</label>
             <input type="number" name="" id="cantidad" value="1"><br>
-            <a class="botonEditar" href="/cannabis-market/productos/editarProducto/<%=producto[0].id%>" type="button" >Editar</a>
-            <form method="POST" action="/cannabis-market/productos/borrarProducto/<%=producto[0].id%>?_method=DELETE">
+            <a class="botonEditar" href="/productos/editarProducto/<%=producto[0].id%>" type="button" >Editar</a>
+            <form method="POST" action="/productos/borrarProducto/<%=producto[0].id%>?_method=DELETE">
                 <button class="botonEliminar" type="submit">Eliminar</button>
             </form>
             <button class="detalleBoton" type="button"> Agregar al carrito</button>
