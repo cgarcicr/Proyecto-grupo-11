@@ -73,7 +73,7 @@ let borrarProducto = ( req = request, res = response )=>{
             console.log( 'Actualizado' );
         }
     });
-    res.render('products/listadoProducto',{
+    res.render('./products/listadoProducto',{
         ok: true,
         listaProductos
     });
@@ -81,7 +81,7 @@ let borrarProducto = ( req = request, res = response )=>{
 
 let listarProductos = ( req, res = response )=>{
     let listaProductos = productosJson;
-    res.render('products/listadoProducto',
+    res.render('./products/listadoProducto',
     {
         ok: true,
         listaProductos
@@ -91,7 +91,7 @@ let listarProductos = ( req, res = response )=>{
 let obtenerProducto = ( req = request, res = response)=>{
     let { id } = req.params;
     let producto = productosJson.filter( resp => resp.id == id );
-    res.render( 'products/detalleProducto',
+    res.render( './products/detalleProducto',
     {
         ok:true,
         producto
