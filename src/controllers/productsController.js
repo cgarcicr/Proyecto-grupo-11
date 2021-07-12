@@ -4,7 +4,7 @@
 const { request, response } = require('express');
 const path = require('path');
 const fs = require('fs');
-let productos = fs.readFileSync( __dirname + '../../database/model/productos.json', 'utf-8' );
+let productos = fs.readFileSync( __dirname + './../database/model/productos.json', 'utf-8' );
 let productosJson = JSON.parse( productos );
 
 let nuevoProducto = ( req, res = response)=>{
