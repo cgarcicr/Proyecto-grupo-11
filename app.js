@@ -27,8 +27,8 @@ app.use(express.json());
 app.use(methodOverride('_method'));
 
 //Routes
-app.use( '/', require( './routes/main' ) );
-app.use( '/login', require( './routes/login' ) );
-app.use( '/registro', require( './routes/registro' ) );
-app.use( '/productos',require( './routes/productos' ) );
+app.use( '/', require( './src/routes/main' ) );
+app.use( '/login', require( './src/routes/login' ) );
+app.use( '/registro', require( './src/routes/registro' ) );
+app.use( '/productos',require( './src/routes/productos' ) );
 
