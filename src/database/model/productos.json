@@ -33,5 +33,12 @@
   "imagen": "/images/gel_dolor.png",
   "precio": "$28.00",
   "descripcion": "Aplicar 3 veces al día en la zona afectada, alivia el dolor y la tensión."
+ },
+ {
+  "id": 6,
+  "nombre": "Prueba5555",
+  "descripcion": "Prueba55555",
+  "precio": "$150",
+  "imagen": "/images/capsulas_extracto_equilibrium.png"
  }
 ]
