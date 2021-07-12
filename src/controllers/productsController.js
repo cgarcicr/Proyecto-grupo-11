@@ -4,8 +4,10 @@
 const { request, response } = require('express');
 const path = require('path');
 const fs = require('fs');
-let productos = fs.readFileSync( __dirname + './../database/model/productos.json', 'utf-8' );
-let productosJson = JSON.parse( productos );
+// let productos = fs.readFileSync( __dirname + './../database/model/productos.json', 'utf-8' );
+// let productosJson = JSON.parse( productos );
+const productos = path.join( __dirname, './../database/model/productos.json' );
+const productosJson = JSON.parse( fs.readFileSync(productos),'utf-8' );
 
 let nuevoProducto = ( req, res = response)=>{
     res.render('products/nuevoProducto');
