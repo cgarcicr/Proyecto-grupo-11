@@ -29,13 +29,13 @@ Reunión diaria que se realiza con los integrantes del equipo, (En el momento no
 
 **Nombre:** *Leandro Carballo*&nbsp;  
 **¿Qué hice ayer?:**
-*Respuesta*&nbsp; 
+*Las actividades referentes al sprint actual*&nbsp; 
 
 **¿Tuve impedimentos para lograr mis objetivos?:**
-*Respuesta*&nbsp; 
+*Falta de tiempo para poder realizar el sprint de mejor manera.*&nbsp; 
 
 **¿Qué voy a hacer hoy?:**
-*Respuesta*&nbsp; 
+*Rrealizar despliegue de app en heroku.*&nbsp; 
 
 ---
 
