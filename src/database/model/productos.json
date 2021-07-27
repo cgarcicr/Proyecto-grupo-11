@@ -26,5 +26,12 @@
   "imagen": "/images/imagesProductos/capsulas_extracto_equilibrium.png",
   "precio": "$35.00",
   "descripcion": "60 Capsulas para mejorar la hipertensión, ansiedad y el insomnio"
+ },
+ {
+  "id": 5,
+  "nombre": "Gel para el dolor 120 GR",
+  "imagen": "/images/gel_dolor.png",
+  "precio": "$28.00",
+  "descripcion": "Aplicar 3 veces al día en la zona afectada, alivia el dolor y la tensión."
  }
 ]
