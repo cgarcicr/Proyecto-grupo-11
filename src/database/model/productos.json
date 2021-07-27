@@ -2,64 +2,29 @@
  {
   "id": 1,
   "nombre": "Extracto puro esencial",
-  "imagen": "/images/extracto_puro_esencial.png",
+  "imagen": "/images/imagesProductos/extracto_puro_esencial.png",
   "precio": "$50.00",
   "descripcion": "Composición 50% delta, 50% Neuro, las reacciones físicas varían, cada persona tiene un metabolismo distinto."
  },
  {
   "id": 2,
   "nombre": "Extracto puro delta",
-  "imagen": "/images/extracto_puro_delta.png",
+  "imagen": "/images/imagesProductos/extracto_puro_delta.png",
   "precio": "$60.00",
   "descripcion": "Composición 70% delta, 30% Neuro, las reacciones físicas varían, cada persona tiene un metabolismo distinto."
  },
  {
   "id": 3,
   "nombre": "Capsulas extracto energético",
-  "imagen": "/images/capsulas_extracto_energetico.png",
+  "imagen": "/images/imagesProductos/capsulas_extracto_energetico.png",
   "precio": "$30.00",
   "descripcion": "90 Capsulas para mejorar la energía la debilidad y el ánimo."
  },
  {
   "id": 4,
   "nombre": "Capsulas Equilibrium",
-  "imagen": "/images/capsulas_extracto_equilibrium.png",
+  "imagen": "/images/imagesProductos/capsulas_extracto_equilibrium.png",
   "precio": "$35.00",
   "descripcion": "60 Capsulas para mejorar la hipertensión, ansiedad y el insomnio"
- },
- {
-  "id": 5,
-  "nombre": "Gel para el dolor 120 GR",
-  "imagen": "/images/gel_dolor.png",
-  "precio": "$28.00",
-  "descripcion": "Aplicar 3 veces al día en la zona afectada, alivia el dolor y la tensión."
- },
- {
-  "id": 6,
-  "nombre": "fabio",
-  "descripcion": "Prueba",
-  "precio": "$777",
-  "imagen": "/images/capsulas_extracto_equilibrium.png"
- },
- {
-  "id": 7,
-  "nombre": "aaa",
-  "descripcion": "bbb",
-  "precio": "$120.00",
-  "imagen": "/images/capsulas_extracto_equilibrium.png"
- },
- {
-  "id": 8,
-  "nombre": "aaa",
-  "descripcion": "bbb",
-  "precio": "$aa",
-  "imagen": "/images/capsulas_extracto_equilibrium.png"
- },
- {
-  "id": 9,
-  "nombre": "aaa",
-  "descripcion": "bbb",
-  "precio": "$aa",
-  "imagen": "/images/capsulas_extracto_equilibrium.png"
  }
 ]

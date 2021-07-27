@@ -15,23 +15,28 @@ let nuevoProducto = ( req, res = response)=>{
 
 let crearProducto = ( req = request, res = response)=>{
     let listaProductos = productosJson;
-    let { nombre, descripcion, precio } = req.body;
-    let newProducto = {
-        id: listaProductos.length + 1,
-        nombre: nombre,
-        descripcion: descripcion,
-        precio: '$' + precio,
-        imagen: "/images/capsulas_extracto_equilibrium.png",
+    let { nombre, descripcion, precio, imagenProducto } = req.body;
+    if( req.file ){
+        let newProducto = {
+            id: listaProductos.length + 1,
+            nombre: nombre,
+            descripcion: descripcion,
+            precio: '$' + precio,
+            imagen: `/images/imagesProductos/${req.file.filename}`
+        }
+        listaProductos.push( newProducto );
+            fs.writeFile('./src/database/model/productos.json', JSON.stringify( listaProductos, null, ' ' ), ( err )=>{
+                if( err ){
+                    console.log( 'El error es: ' + err);
+                }else{
+                    console.log( 'Actualizado' );
+                }
+            });
+        res.redirect('/productos');
+    }else{
+        res.render('products/nuevoProducto');
     }
-    listaProductos.push( newProducto );
-        fs.writeFile('./src/database/model/productos.json', JSON.stringify( listaProductos, null, ' ' ), ( err )=>{
-            if( err ){
-                console.log( 'El error es: ' + err);
-            }else{
-                console.log( 'Actualizado' );
-            }
-        });
-    res.redirect('/productos');
+
 }
 
 let editarProducto = ( req, res = response)=>{
