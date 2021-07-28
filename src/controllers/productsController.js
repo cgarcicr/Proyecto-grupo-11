@@ -34,7 +34,7 @@ let crearProducto = ( req = request, res = response)=>{
             });
         res.redirect('/productos');
     }else{
-        res.render('products/nuevoProducto');
+        res.render('products/nuevoProducto', { });
     }
 
 }

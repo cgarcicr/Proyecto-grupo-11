@@ -269,6 +269,8 @@ body{
     padding: 20px;
     box-shadow: 0 5px 35px 0 rgb(0 0 0 / 15%);
     box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .cuadroFormulario{
@@ -336,10 +338,12 @@ section div button{
 
 .card-productos{
     width: 100px;
-    display: flex;
-    flex-direction: column;
-    margin: 80px;
-    margin-left: 40%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 5px 35px 0 rgb(0 0 0 / 15%);
+    box-sizing: border-box;
+    margin: 10px 20px 50px 20px;
 }
 
 .contador{
@@ -409,4 +413,18 @@ section div button{
 
 .ocultarCampos{
     display: none;
+}
+
+.errorValidaciones{
+    color: red;
+}
+
+.perfilMargin{
+    text-align: center;
+}
+
+.orderProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }

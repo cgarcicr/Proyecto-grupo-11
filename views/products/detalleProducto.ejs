@@ -14,23 +14,25 @@
     </head>
 <body>
     <%- include('../partials/header') %>
-    <section class="detalleProducto">
-        <article>
-            <img src="<%=producto[0].imagen%>" alt="Producto">
-        </article>
-        <article>
-            <h2><%=producto[0].nombre%></h2>
-            <p class="detallePrecio"><%=producto[0].precio%></p>
-            <p><%=producto[0].descripcion%></p>
-            <label for="cantidad">Cantidad</label>
-            <input type="number" name="" id="cantidad" value="1"><br>
-            <a class="botonEditar" href="/productos/editarProducto/<%=producto[0].id%>" type="button" >Editar</a>
-            <form method="POST" action="/productos/borrarProducto/<%=producto[0].id%>?_method=DELETE">
-                <button class="botonEliminar" type="submit">Eliminar</button>
-            </form>
-            <button class="detalleBoton" type="button"> Agregar al carrito</button>
-        </article>
-    </section>
+    <div class="cuadro">
+        <section class="detalleProducto">
+            <article>
+                <img src="<%=producto[0].imagen%>" alt="Producto">
+            </article>
+            <article>
+                <h2><%=producto[0].nombre%></h2>
+                <p class="detallePrecio"><%=producto[0].precio%></p>
+                <p><%=producto[0].descripcion%></p>
+                <label for="cantidad">Cantidad</label>
+                <input type="number" name="" id="cantidad" value="1"><br>
+                <a class="botonEditar" href="/productos/editarProducto/<%=producto[0].id%>" type="button" >Editar</a>
+                <form method="POST" action="/productos/borrarProducto/<%=producto[0].id%>?_method=DELETE">
+                    <button class="botonEliminar" type="submit">Eliminar</button>
+                </form>
+                <button class="detalleBoton" type="button"> Agregar al carrito</button>
+            </article>
+        </section>
+    </div>
     <%- include('../partials/footer') %>
 </body>
 </html>

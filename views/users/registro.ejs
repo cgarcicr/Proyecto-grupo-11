@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <title>Cannabis-Market</title>
 </head>
 <body >
@@ -22,23 +24,28 @@
                 <div>
                     <a class="enlace" href="#">¿Ya tienes una cuenta? ¡Inicie sesión en su lugar!</a>
                 </div>
-                <form action="#" ></form>
+                <form action="/registro" method="POST" >
                     <p>Nombre</p>
-                    <input class="cajaDatos" type="text">
+                    <input class="cajaDatos" type="text" name="nombre" value="<%= locals.old && old.nombre ? old.nombre : '' %>">
                     <p>Apellido</p>
-                    <input class="cajaDatos" type="text">
+                    <input class="cajaDatos" type="text" name="apellido" value="<%= locals.old && old.apellido ? old.apellido : '' %>">
                     <p>Correo electrónico</p>
-                    <input class="cajaDatos" type="email">
+                    <input class="cajaDatos" type="email" name="correo" value="<%= locals.old && old.correo ? old.correo : '' %>">
                     <p>Contraseña</p>
-                    <input class="cajaDatos" type="password">
+                    <input class="cajaDatos" type="password" name="contrasenia">
                     <p>Fecha de nacimiento</p>
-                    <input class="cajaDatos" type="date"><br>
+                    <input class="cajaDatos" type="date" name="fechaNacimiento" value="<%= locals.old && old.fechaNacimiento ? old.fechaNacimiento : '' %>"><br>
                     <input type="checkbox"><span class="recordarme">Recibir ofertas de nuestros productos</span><br><br>
                     <input type="checkbox"><span class="recordarme">Suscribirse a nuetro boletin de noticias</span><br><br>
                     <div class="boton">
-                        <a href="http://localhost:3000/cannabis-market"><button>Guardar</button></a>
+                        <button type="submit">Guardar</button>
                     </div>
                 </form>
+                <% if (locals.errors) {
+                    errors.forEach( error =>{%>
+                        <p class="errorValidaciones"><%= error.msg %></p>
+                    <%})
+                }%>
             </section>
             <footer>
             </footer>

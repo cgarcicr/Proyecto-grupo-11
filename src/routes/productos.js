@@ -4,6 +4,7 @@ const multer = require('multer');
 const path = require('path');
 const { nuevoProducto, editarProducto, listarProductos, obtenerProducto, crearProducto, modificarProducto, borrarProducto  } = require('../controllers/productsController');
 
+//Uso de multer para subir archivos al server
 const storage = multer.diskStorage({
     destination: ( req, file, cb)=>{
         cb( null, path.join( __dirname, '../../public/images/imagesProductos' ) );
@@ -18,7 +19,7 @@ const upload = multer({ storage: storage })
 
 router.get( '/', listarProductos );
 router.get( '/obtenerProducto/:id', obtenerProducto );
-router.get( '/nuevoProducto', nuevoProducto );
+router.get( '/nuevoProducto',  nuevoProducto );
 router.post( '/nuevoProducto', upload.single('imagenProducto'), crearProducto );
 router.get( '/editarProducto/:id', editarProducto );
 router.put( '/editarProducto', modificarProducto );

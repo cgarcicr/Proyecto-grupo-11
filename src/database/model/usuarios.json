@@ -1,73 +1,74 @@
 [
-    {
-        "id": 1,
-        "nombre": "Brigida",
-        "apellido": "Gronaller",
-        "email": "bgronaller0@bloomberg.com",
-        "password": "GzfRjj",
-        "telefono": "789-914-0922"
-    }, {
-        "id": 2,
-        "nombre": "Sadella",
-        "apellido": "Slesser",
-        "email": "sslesser1@nba.com",
-        "password": "0vOsQgK2Z",
-        "telefono": "806-575-4127"
-    }, {
-        "id": 3,
-        "nombre": "Milt",
-        "apellido": "Dillinger",
-        "email": "mdillinger2@mediafire.com",
-        "password": "V7XW9Cmt",
-        "telefono": "631-278-9913"
-    }, {
-        "id": 4,
-        "nombre": "Therese",
-        "apellido": "Allridge",
-        "email": "tallridge3@netscape.com",
-        "password": "K8UCmS",
-        "telefono": "709-945-4322"
-    }, {
-        "id": 5,
-        "nombre": "Korie",
-        "apellido": "Kerr",
-        "email": "kkerr4@merriam-webster.com",
-        "password": "GfLWoNUYzVY",
-        "telefono": "395-997-1209"
-    }, {
-        "id": 6,
-        "nombre": "Tybalt",
-        "apellido": "Marczyk",
-        "email": "tmarczyk5@deliciousdays.com",
-        "password": "Aitec542X9G",
-        "telefono": "720-342-5186"
-    }, {
-        "id": 7,
-        "nombre": "Jerrilyn",
-        "apellido": "Leyfield",
-        "email": "jleyfield6@bloomberg.com",
-        "password": "v1arEBrB",
-        "telefono": "907-930-2676"
-    }, {
-        "id": 8,
-        "nombre": "Kahaleel",
-        "apellido": "Drogan",
-        "email": "kdrogan7@soup.io",
-        "password": "ZwqmWUex1u",
-        "telefono": "544-500-6150"
-    }, {
-        "id": 9,
-        "nombre": "Ty",
-        "apellido": "Aysik",
-        "email": "taysik8@fema.gov",
-        "password": "lC3P1e6B9vM7",
-        "telefono": "609-490-8708"
-    }, {
-        "id": 10,
-        "nombre": "Belva",
-        "apellido": "Karpfen",
-        "email": "bkarpfen9@oaic.gov.au",
-        "password": "zCCZYf0kjy5",
-        "telefono": "876-498-1259"
-    }
+ {
+  "id": 1,
+  "nombre": "Camilo",
+  "apellido": "García",
+  "correo": "andrescruz5193@gmail.com",
+  "contrasenia": "$2b$10$neaBpYz9RnbRM1fDlJ/FnuYIskcloUiscs8ZtkVGOI14Ix/thEisy",
+  "fechaNacimiento": "2021-07-27"
+ },
+ {
+  "id": 2,
+  "nombre": "Freddie",
+  "apellido": "Mercury",
+  "correo": "freddiem@gmail.com",
+  "contrasenia": "$2b$10$neaBpYz9RnbRM1fDlJ/FnuYIskcloUiscs8ZtkVGOI14Ix/thEisy",
+  "fechaNacimiento": "2021-07-28"
+ },
+ {
+  "id": 3,
+  "nombre": "Bon",
+  "apellido": "Jovi",
+  "correo": "bonjovi@gmail.com",
+  "contrasenia": "$2b$10$neaBpYz9RnbRM1fDlJ/FnuYIskcloUiscs8ZtkVGOI14Ix/thEisy",
+  "fechaNacimiento": "1962-12-16"
+ },
+ {
+  "id": 4,
+  "nombre": "Brian",
+  "apellido": "May",
+  "correo": "brianm@gmail.com",
+  "contrasenia": "$2b$10$neaBpYz9RnbRM1fDlJ/FnuYIskcloUiscs8ZtkVGOI14Ix/thEisy",
+  "fechaNacimiento": "2021-07-13"
+ },
+ {
+  "id": 5,
+  "nombre": "Santiago",
+  "apellido": "Mejia",
+  "correo": "santiagom@gmail.com",
+  "contrasenia": "$2b$10$neaBpYz9RnbRM1fDlJ/FnuYIskcloUiscs8ZtkVGOI14Ix/thEisy",
+  "fechaNacimiento": "2021-07-12"
+ },
+ {
+  "id": 6,
+  "nombre": "Roger",
+  "apellido": "Taylor",
+  "correo": "rogert@gmail.com",
+  "contrasenia": "$2b$10$neaBpYz9RnbRM1fDlJ/FnuYIskcloUiscs8ZtkVGOI14Ix/thEisy",
+  "fechaNacimiento": "2021-07-13"
+ },
+ {
+  "id": 7,
+  "nombre": "Juan",
+  "apellido": "Machado",
+  "correo": "jmachado@gmail.com",
+  "contrasenia": "$2b$10$wlU6.gW.DDKU0ePOjzWN8.1OBrBleWtGvwLSiWLk60lSA7RHVfUvy",
+  "fechaNacimiento": "2021-07-12"
+ },
+ {
+  "id": 8,
+  "nombre": "Juan",
+  "apellido": "Machado",
+  "correo": "jmachado@gmail.com",
+  "contrasenia": "$2b$10$LmD4Npb59dll7nGk053VR.Q1V2K2FF0wlqacB66M735RLum5YKV1u",
+  "fechaNacimiento": "2021-07-12"
+ },
+ {
+  "id": 9,
+  "nombre": "aaa",
+  "apellido": "aaa",
+  "correo": "andrescruz519aa@gmail.com",
+  "contrasenia": "$2b$10$k5Emy0qqNDYEYoNIX9k/puCOef2GnZiSye4jhkXaZjvvC.jtAmUKi",
+  "fechaNacimiento": "2021-07-20"
+ }
 ]

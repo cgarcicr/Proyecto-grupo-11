@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <title>Cannabis-Market</title>
+</head>
+<body >
+    <%- include('../partials/header') %>
+    <div class="cuadro">
+        <header class="tituloLogin">
+            <h2>Perfil de usuario</h2>
+            <hr class="lineaTitulo">
+        </header>
+        <div class="perfilMargin">
+            <% if( !ok ){%>
+                <h3>Usuario no logueado</h3>
+            <%}else{%>
+                <h3>Nombre: <i><%=newUsuario.nombre%></i></h3>
+                <h3>Apellido: <i><%=newUsuario.apellido%></i></h3>
+                <h3>Correo: <i><%=newUsuario.correo%></i></h3>
+                <h3>Fecha nacimiento: <i><%=newUsuario.fechaNacimiento%></i></h3>
+            <%}%>
+        </div>
+    </div>
+    <%- include('../partials/footer') %>
+</body>
+</html>
