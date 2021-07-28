@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const methodOverride = require('method-override');
+const session = require('express-session');
 
 //Crear el servidor con express
 const app = express();
@@ -25,6 +26,9 @@ app.use(express.json());
 
 //Sobre escribir método original forms
 app.use(methodOverride('_method'));
+
+//Session a nivel global
+app.use(session({ secret: 'Secreto!!!'}));
 
 //Routes
 app.use( '/', require( './src/routes/main' ) );

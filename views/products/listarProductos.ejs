@@ -17,18 +17,19 @@
         <div class="contador">
             <p>Cantidad productos: <%= listaProductos.length%></p>
         </div>
-        <div class="card-productos">
+        <div class="orderProductos">
             <% listaProductos.forEach( ( producto) =>{ %>
+                <article class="card-productos">
                 <a href="/productos/obtenerProducto/<%=producto.id%>">
                     <div>
-                        <img src="<%=producto.imagen%>" alt="">
+                        <img src="<%=producto.imagen%>" alt="producto">
                         <h4><%=producto.nombre%></h4>
                         <p><%=producto.precio%></p>
-                    </div><br>
+                    </div>
                 </a>
+            </article>
             <%});%>
         </div>
-
 
     <%- include('../partials/footer') %>
 </body>

@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <title>Cannabis-Market</title>
 </head>
 <body >
@@ -19,24 +21,29 @@
         </header>
         <div class="cuadroFormulario">
             <section >
-                <form action="#" ></form>
+                <% if (locals.errors) {
+                    errors.forEach( error =>{%>
+                        <p class="errorValidaciones"><%= error.msg %></p>
+                    <%})
+                }%>
+                <form action="/login" method="POST" >
                     <p>Correo</p>
-                    <input class="cajaDatos" type="text">
+                    <input class="cajaDatos" type="text" name="correo">
                     <p>Contraseña</p>
-                    <input class="cajaDatos" type="password"><br>
+                    <input class="cajaDatos" type="password" name="contrasenia"><br>
                     <input type="checkbox"><span class="recordarme">Recordame</span>
                     <div class="centrarEnlace">
                         <a class="enlace" href="#">¿Olvidaste tu contraseña?</a>
                     </div><br>
                     <div class="boton">
-                        <a href="http://localhost:3000/cannabis-market"><button>Ingresar</button></a>
+                        <button type="submit">Ingresar</button>
                     </div>
                 </form>
             </section>
             <footer>
                 <hr>
                 <div class="centrarEnlace">
-                    <a class="enlace" href="http://localhost:3000/cannabis-market/registro">¿Sin cuenta? Crea una aquí</a>
+                    <a class="enlace" href="/registro">¿Sin cuenta? Crea una aquí</a>
                 </div>
             </footer>
         </div>
