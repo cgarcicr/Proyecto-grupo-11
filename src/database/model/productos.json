@@ -26,19 +26,5 @@
   "imagen": "/images/imagesProductos/capsulas_extracto_equilibrium.png",
   "precio": "$35.00",
   "descripcion": "60 Capsulas para mejorar la hipertensión, ansiedad y el insomnio"
- },
- {
-  "id": 5,
-  "nombre": "Aceite CBD",
-  "descripcion": "Cbd para terapia del dolor",
-  "precio": "$56.00",
-  "imagen": "/images/imagesProductos/producto-1627434032238.jpg"
- },
- {
-  "id": 6,
-  "nombre": "Capsula cannabis",
-  "descripcion": "Comprimidos de cbd",
-  "precio": "$240.00",
-  "imagen": "/images/imagesProductos/producto-1627437166226.jpg"
  }
 ]
