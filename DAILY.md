@@ -1,5 +1,56 @@
 # PROYECTO GRUPO 11
 
+## Daily Sprint 5
+Reunión diaria que se realiza con los integrantes del equipo, (En el momento no la estamos realizando de forma diaria):&nbsp; 
+
+**Nombre:** *Camilo Garcia*&nbsp;  
+**¿Qué hice ayer?:**
+*Las actividades referentes al sprint actual (Registro de usuario y login)*&nbsp; 
+
+**¿Tuve impedimentos para lograr mis objetivos?:**
+*Implementar multer para subir archivos al server*&nbsp; 
+
+**¿Qué voy a hacer hoy?:**
+*Actualizar archivo retro.md y daily.md, actualizar tablero de trello*&nbsp; 
+
+---
+
+**Nombre:** *Fernando "Javier" Fernandez*&nbsp;  
+**¿Qué hice ayer?:**
+*Respuesta*&nbsp; 
+
+**¿Tuve impedimentos para lograr mis objetivos?:**
+*Respuesta*&nbsp; 
+
+**¿Qué voy a hacer hoy?:**
+*Respuesta*&nbsp; 
+
+---
+
+**Nombre:** *Leandro Carballo*&nbsp;  
+**¿Qué hice ayer?:**
+*Respuesta*&nbsp; 
+
+**¿Tuve impedimentos para lograr mis objetivos?:**
+*Respuesta*&nbsp; 
+
+**¿Qué voy a hacer hoy?:**
+*Respuesta*&nbsp; 
+
+---
+
+**Nombre:** *Carlos Andres Añasco*&nbsp;  
+**¿Qué hice ayer?:**
+*Respuesta*&nbsp; 
+
+**¿Tuve impedimentos para lograr mis objetivos?:**
+*Respuesta*&nbsp; 
+
+**¿Qué voy a hacer hoy?:**
+*Respuesta*&nbsp; 
+
+---
+
 ## Daily Sprint 4
 Reunión diaria que se realiza con los integrantes del equipo, (En el momento no la estamos realizando de forma diaria):&nbsp; 
 
