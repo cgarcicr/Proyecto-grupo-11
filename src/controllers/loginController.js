@@ -6,39 +6,48 @@ const path = require('path');
 const fs = require('fs');
 const { validationResult} = require('express-validator');
 const bcrypt = require('bcrypt');
-const usuarios = path.join( __dirname, './../database/model/usuarios.json' );
-const usuariosJson = JSON.parse( fs.readFileSync(usuarios),'utf-8' );
+const LoginModel = require('../models/loginModel');
+const { send } = require('process');
 
 let  obtenerLogin = ( req, res = response)=>{
-    //res.render( path.resolve(__dirname, '../views/users/login') );
-    res.render('users/login');
+    return res.render('users/login');
 }
 
 let procesarLogin = (req, res = response)=>{
-    let usuarioLogueado;
     let errors = validationResult( req );
-    if( errors.isEmpty() ){
-        let listaUsuarios = usuariosJson;
+    let usuarioLogueado = LoginModel.obtenerUsuarioPorEmail( 'correo', req.body.correo );
 
-        for( let i=0; i<listaUsuarios.length; i++){
-            if( listaUsuarios[i].correo == req.body.correo ){
-                if( bcrypt.compareSync( req.body.contrasenia,  listaUsuarios[i].contrasenia ) ){
-                    usuarioLogueado = listaUsuarios[i];
-                    break;
-                }
+    if( usuarioLogueado ){
+        let okPassword = bcrypt.compareSync( req.body.contrasenia, usuarioLogueado.contrasenia );
+        if( okPassword ){
+            delete usuarioLogueado.contrasenia;
+            req.session.usuarioLogueado = usuarioLogueado;
+
+            //Creación de cookie
+            if( req.body.recordarme ){
+                res.cookie('correoUsuario', req.body.correo, { maxAge: (1000 * 60) * 60 })
             }
+            // return res.render( 'users/perfilUsuario', { usuario: req.session.usuarioLogueado } );
+            return res.redirect('/');
         }
-
-        if( usuarioLogueado == undefined ){
-            return res.render( 'users/login', { errors: [{msg: 'Credenciales inválidas'}] } );
-        }
-
-        req.session.usuarioLogueado = usuarioLogueado;
-        let newUsuario = req.session.usuarioLogueado;
-        res.render('users/perfilUsuario', { newUsuario, ok: true });
-    }else{
-        return res.render( 'users/login', { errors: errors.array() } );
+        return res.render('users/login', {
+            errors: [
+                {
+                    param: 'correo',
+                    msg: 'Usuario o contraseña incorrecto'
+                }
+            ]
+        });
     }
+
+    return res.render('users/login', {
+        errors: [
+            {
+                param: 'correo',
+                msg: 'No se encuentra el email en la base de datos'
+            }
+        ]
+    });
 }
 
 module.exports = { obtenerLogin, procesarLogin }
