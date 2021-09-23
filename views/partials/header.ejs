@@ -10,9 +10,15 @@
             <a href="https://www.whatsapp.com/perfil"><i class="fab fa-whatsapp-square"></i></a>
         </nav>
         <nav class="nav1">
-            <a href="/login"><i class="fas fa-sign-in-alt"></i></a>
-            <a href="/registro"><i class="fas fa-user-plus"></i></a>
-            <a href="/registro/perfilUsuario"><i class="fas fa-user"></i></a>
+            <%if(!locals.estaLogueado){%>
+                <a href="/login"><i class="fas fa-door-open"></i></a>
+                <a href="/registro"><i class="fas fa-user-plus"></i></a>
+            <%} else {%>
+            <a href="/perfil" style="font-size: 25px; font-weight: bold;">hola <%=locals.usuarioLogueado.nombre%> <%=locals.usuarioLogueado.apellido%></a>
+            <!-- <a href="/perfil"><img style="width: 70px;" src="/images/imagesUsuarios/<%=locals.usuarioLogueado.avatar%>"></a> -->
+            <a href="/perfil"><i class="fas fa-user"></i></a>
+            <a href="/logout"><i class="fas fa-times"></i></a>
+            <%}%>
             <!-- <a href=""><i class="fas fa-search"></i></a>
             <a href=""><i class="fas fa-heart"></i></a>
             <a href=""><i class="fas fa-shopping-basket"></i></a> -->

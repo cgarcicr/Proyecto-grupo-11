@@ -24,28 +24,53 @@
                 <div>
                     <a class="enlace" href="#">¿Ya tienes una cuenta? ¡Inicie sesión en su lugar!</a>
                 </div>
-                <form action="/registro" method="POST" >
-                    <p>Nombre</p>
+                <form action="/registro" method="POST" enctype="multipart/form-data">
+                    <p>* Nombre</p>
                     <input class="cajaDatos" type="text" name="nombre" value="<%= locals.old && old.nombre ? old.nombre : '' %>">
-                    <p>Apellido</p>
+                    <% if(locals.errors) {
+                        errors.forEach( error =>{
+                            if( error.param == 'nombre' ){%>
+                                <small class="errorValidaciones"><%= error.msg%></small><br><br>
+                            <%}%>
+                        <%})
+                    }%>
+                    <p>* Apellido</p>
                     <input class="cajaDatos" type="text" name="apellido" value="<%= locals.old && old.apellido ? old.apellido : '' %>">
-                    <p>Correo electrónico</p>
+                    <% if(locals.errors) {
+                        errors.forEach( error =>{
+                            if( error.param == 'apellido' ){%>
+                                <small class="errorValidaciones"><%= error.msg%></small><br><br>
+                            <%}%>
+                        <%})
+                    }%>
+                    <p>* Correo electrónico</p>
                     <input class="cajaDatos" type="email" name="correo" value="<%= locals.old && old.correo ? old.correo : '' %>">
-                    <p>Contraseña</p>
+                    <% if(locals.errors) {
+                        errors.forEach( error =>{
+                            if( error.param == 'correo' ){%>
+                                <small class="errorValidaciones"><%= error.msg%></small><br><br>
+                            <%}%>
+                        <%})
+                    }%>
+                    <p>* Contraseña</p>
                     <input class="cajaDatos" type="password" name="contrasenia">
-                    <p>Fecha de nacimiento</p>
-                    <input class="cajaDatos" type="date" name="fechaNacimiento" value="<%= locals.old && old.fechaNacimiento ? old.fechaNacimiento : '' %>"><br>
-                    <input type="checkbox"><span class="recordarme">Recibir ofertas de nuestros productos</span><br><br>
-                    <input type="checkbox"><span class="recordarme">Suscribirse a nuetro boletin de noticias</span><br><br>
+                    <% if(locals.errors) {
+                        errors.forEach( error =>{
+                            if( error.param == 'contrasenia' ){%>
+                                <small class="errorValidaciones"><%= error.msg%></small><br><br><br>
+                            <%}%>
+                        <%})
+                    }%>
+                    <p>Avatar</p>
+                    <input class="cajaDatos" type="file" name="imagenAvatar"><br><br>
+                    <!-- <p>Fecha de nacimiento</p> -->
+                    <!-- <input class="cajaDatos" type="date" name="fechaNacimiento" value="<%= locals.old && old.fechaNacimiento ? old.fechaNacimiento : '' %>"><br> -->
+                    <!-- <input type="checkbox"><span class="recordarme">Recibir ofertas de nuestros productos</span><br><br>
+                    <input type="checkbox"><span class="recordarme">Suscribirse a nuetro boletin de noticias</span><br><br> -->
                     <div class="boton">
                         <button type="submit">Guardar</button>
                     </div>
                 </form>
-                <% if (locals.errors) {
-                    errors.forEach( error =>{%>
-                        <p class="errorValidaciones"><%= error.msg %></p>
-                    <%})
-                }%>
             </section>
             <footer>
             </footer>

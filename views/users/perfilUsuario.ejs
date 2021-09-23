@@ -16,18 +16,13 @@
     <%- include('../partials/header') %>
     <div class="cuadro">
         <header class="tituloLogin">
-            <h2>Perfil de usuario</h2>
+            <p>Perfil de usuario</p>
             <hr class="lineaTitulo">
         </header>
         <div class="perfilMargin">
-            <% if( !ok ){%>
-                <h3>Usuario no logueado</h3>
-            <%}else{%>
-                <h3>Nombre: <i><%=newUsuario.nombre%></i></h3>
-                <h3>Apellido: <i><%=newUsuario.apellido%></i></h3>
-                <h3>Correo: <i><%=newUsuario.correo%></i></h3>
-                <h3>Fecha nacimiento: <i><%=newUsuario.fechaNacimiento%></i></h3>
-            <%}%>
+            <h2>Hola <%= usuario.nombre %> <%= usuario.apellido %></h2>
+            <img style="width: 200px;" src="/images/imagesUsuarios/<%=usuario.avatar%>">
+            <p>Correo: <%=usuario.correo%></p>
         </div>
     </div>
     <%- include('../partials/footer') %>

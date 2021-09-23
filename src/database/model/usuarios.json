@@ -1,74 +1,26 @@
 [
  {
   "id": 1,
-  "nombre": "Camilo",
-  "apellido": "García",
+  "nombre": "camilo",
+  "apellido": "garcia",
   "correo": "andrescruz5193@gmail.com",
-  "contrasenia": "$2b$10$neaBpYz9RnbRM1fDlJ/FnuYIskcloUiscs8ZtkVGOI14Ix/thEisy",
-  "fechaNacimiento": "2021-07-27"
+  "contrasenia": "$2b$10$tORlJYZ3X4gPcPLSHIc3F.79cFxk1CjM8IeepBHDrYmcmTCltcj9i",
+  "avatar": "usuario-1632193646075.jpg"
  },
  {
   "id": 2,
-  "nombre": "Freddie",
-  "apellido": "Mercury",
-  "correo": "freddiem@gmail.com",
-  "contrasenia": "$2b$10$neaBpYz9RnbRM1fDlJ/FnuYIskcloUiscs8ZtkVGOI14Ix/thEisy",
-  "fechaNacimiento": "2021-07-28"
+  "nombre": "andres",
+  "apellido": "calamaro",
+  "correo": "calamaro@gmail.com",
+  "contrasenia": "$2b$10$5ykdMWYzv/iJdvcanMuxmu0hPs9qZhZjwEgOw9zdrEOSdR5lLntPG",
+  "avatar": "usuario-1632193718844.jpg"
  },
  {
   "id": 3,
-  "nombre": "Bon",
-  "apellido": "Jovi",
-  "correo": "bonjovi@gmail.com",
-  "contrasenia": "$2b$10$neaBpYz9RnbRM1fDlJ/FnuYIskcloUiscs8ZtkVGOI14Ix/thEisy",
-  "fechaNacimiento": "1962-12-16"
- },
- {
-  "id": 4,
-  "nombre": "Brian",
-  "apellido": "May",
-  "correo": "brianm@gmail.com",
-  "contrasenia": "$2b$10$neaBpYz9RnbRM1fDlJ/FnuYIskcloUiscs8ZtkVGOI14Ix/thEisy",
-  "fechaNacimiento": "2021-07-13"
- },
- {
-  "id": 5,
-  "nombre": "Santiago",
-  "apellido": "Mejia",
-  "correo": "santiagom@gmail.com",
-  "contrasenia": "$2b$10$neaBpYz9RnbRM1fDlJ/FnuYIskcloUiscs8ZtkVGOI14Ix/thEisy",
-  "fechaNacimiento": "2021-07-12"
- },
- {
-  "id": 6,
-  "nombre": "Roger",
-  "apellido": "Taylor",
-  "correo": "rogert@gmail.com",
-  "contrasenia": "$2b$10$neaBpYz9RnbRM1fDlJ/FnuYIskcloUiscs8ZtkVGOI14Ix/thEisy",
-  "fechaNacimiento": "2021-07-13"
- },
- {
-  "id": 7,
-  "nombre": "Juan",
-  "apellido": "Machado",
-  "correo": "jmachado@gmail.com",
-  "contrasenia": "$2b$10$wlU6.gW.DDKU0ePOjzWN8.1OBrBleWtGvwLSiWLk60lSA7RHVfUvy",
-  "fechaNacimiento": "2021-07-12"
- },
- {
-  "id": 8,
-  "nombre": "Juan",
-  "apellido": "Machado",
-  "correo": "jmachado@gmail.com",
-  "contrasenia": "$2b$10$LmD4Npb59dll7nGk053VR.Q1V2K2FF0wlqacB66M735RLum5YKV1u",
-  "fechaNacimiento": "2021-07-12"
- },
- {
-  "id": 9,
-  "nombre": "aaa",
-  "apellido": "aaa",
-  "correo": "andrescruz519aa@gmail.com",
-  "contrasenia": "$2b$10$k5Emy0qqNDYEYoNIX9k/puCOef2GnZiSye4jhkXaZjvvC.jtAmUKi",
-  "fechaNacimiento": "2021-07-20"
+  "nombre": "Freedie",
+  "apellido": "Mercury",
+  "correo": "fredy@gmail.com",
+  "contrasenia": "$2b$10$IjaLfqcQTGJdSfhMwNRcG.afMtKRAfn5HPu.coT608FstqMwA1XmK",
+  "avatar": "usuario-1632356977895.png"
  }
 ]
