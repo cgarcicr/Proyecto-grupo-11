@@ -1,37 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cannabis-Market</title>
-        <link rel="stylesheet" href="/css/styles.css">
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    </head>
+    <%- include('../partials/head') %>
 <body>
     <%- include('../partials/header') %>
-    <div class="cuadro">
-        <section class="detalleProducto">
-            <article>
-                <img src="<%=producto[0].imagen%>" alt="Producto">
-            </article>
-            <article>
-                <h2><%=producto[0].nombre%></h2>
-                <p class="detallePrecio"><%=producto[0].precio%></p>
-                <p><%=producto[0].descripcion%></p>
-                <label for="cantidad">Cantidad</label>
-                <input type="number" name="" id="cantidad" value="1"><br>
-                <a class="botonEditar" href="/productos/editarProducto/<%=producto[0].id%>" type="button" >Editar</a>
-                <form method="POST" action="/productos/borrarProducto/<%=producto[0].id%>?_method=DELETE">
-                    <button class="botonEliminar" type="submit">Eliminar</button>
-                </form>
-                <button class="detalleBoton" type="button"> Agregar al carrito</button>
-            </article>
-        </section>
+        <div class="main">
+        <div class="shop_top">
+            <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="single_image">
+                                <img width="300px" src="/images/imagesProductos/<%=producto.imagen%>">
+                            </div>
+                        </div>
+                    <div class="col-md-4">
+                        <div >
+                            <h3><%=producto.nombre%></h3>
+                            <p class="m_10"><%=producto.descripcion%></p>
+                            <div class="btn_form">
+                                <form action="/bolsa/agregarProducto/<%=producto.id%>">
+                                    <input type="submit" value="Comprar ahora" title="">
+                                    <!-- <span>Agregar al carro</span> -->
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="box-info-product">
+                            <p class="price2">Precio: $<%=producto.precio%></p>
+                                <!-- <ul class="prosuct-qty">
+                                    <span><%=producto.stock%> disponibles</span>
+                                    <span>Cantidad: </span>
+                                    <select>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </select>
+                                </ul> -->
+                                
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
     </div>
     <%- include('../partials/footer') %>
 </body>

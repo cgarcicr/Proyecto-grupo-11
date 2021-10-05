@@ -1,26 +1,3 @@
 [
- {
-  "id": 1,
-  "nombre": "camilo",
-  "apellido": "garcia",
-  "correo": "andrescruz5193@gmail.com",
-  "contrasenia": "$2b$10$tORlJYZ3X4gPcPLSHIc3F.79cFxk1CjM8IeepBHDrYmcmTCltcj9i",
-  "avatar": "usuario-1632193646075.jpg"
- },
- {
-  "id": 2,
-  "nombre": "andres",
-  "apellido": "calamaro",
-  "correo": "calamaro@gmail.com",
-  "contrasenia": "$2b$10$5ykdMWYzv/iJdvcanMuxmu0hPs9qZhZjwEgOw9zdrEOSdR5lLntPG",
-  "avatar": "usuario-1632193718844.jpg"
- },
- {
-  "id": 3,
-  "nombre": "Freedie",
-  "apellido": "Mercury",
-  "correo": "fredy@gmail.com",
-  "contrasenia": "$2b$10$IjaLfqcQTGJdSfhMwNRcG.afMtKRAfn5HPu.coT608FstqMwA1XmK",
-  "avatar": "usuario-1632356977895.png"
- }
+ 
 ]

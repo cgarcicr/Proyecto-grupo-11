@@ -1,34 +1,50 @@
 <header>
-    <div class="parte1">
-        <img src="/images/logo.png" alt="" class="logo">
-        <h1 class="nombre">Cannabis-mart</h1>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="header-left">
+                        <div class="logo">
+                            <a href="/"><img style="width: 60px;" src="/images/cannabis.png" alt=""/></a>
+                        </div>
+                        <div class="menu">
+                            <a class="toggleMenu" href="#"><img src="images/nav.png" alt="" /></a>
+                            <ul class="nav" id="nav">
+                                <li><a href="/">Tienda</a></li>
+                                <!-- <li><a href="/">Nosotros</a></li> -->
+                                <!-- <li><a href="/">Contacto</a></li> -->
+                            <%if(!locals.estaLogueado){%>
+                                <li><a href="/login">Ingresar</a></li>
+                                <li><a href="/registro">Registrarse</a></li>
+                            <%} else if(locals.rol == 1){%>
+                                <li><a href="/productos">Crear producto</a></li>
+                                <li><a href="/perfil">Hola <%=locals.usuarioLogueado.nombre%></a></li>
+                                <li><a href="/logout">Salir</a></li>
+                                <li><a href="/bolsa"><i class="fa fa-shopping-bag "></i></a></li>
+                            <%}else {%>
+                                <li><a href="/perfil">Hola <%=locals.usuarioLogueado.nombre%></a></li>
+                                <li><a href="/logout">Salir</a></li>
+                                <li><a href="/bolsa"><i class="fa fa-shopping-bag "></i></a></li>
+                            <%}%>
+
+                                <div class="clear"></div>
+                            </ul>
+                            <script type="text/javascript" src="js/responsive-nav.js"></script>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="header_right">
+                        <div id="sb-search" class="sb-search">
+                            <form>
+                                <input class="sb-search-input"  placeholder="Buscar producto" type="search" name="search" id="search">
+                                <!-- <input class="sb-search-submit" type="submit" value=""> -->
+                                <span class="sb-icon-search"> </span>
+                            </form>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="parte2">
-        <nav class="nav1">
-            <a href="https://www.facebook.com/perfil"><i class="fab fa-facebook" ></i></a>
-            <a href="https://www.instagram.com/perfil"><i class="fab fa-instagram-square"></i></a>
-            <a href="https://www.whatsapp.com/perfil"><i class="fab fa-whatsapp-square"></i></a>
-        </nav>
-        <nav class="nav1">
-            <%if(!locals.estaLogueado){%>
-                <a href="/login"><i class="fas fa-door-open"></i></a>
-                <a href="/registro"><i class="fas fa-user-plus"></i></a>
-            <%} else {%>
-            <a href="/perfil" style="font-size: 25px; font-weight: bold;">hola <%=locals.usuarioLogueado.nombre%> <%=locals.usuarioLogueado.apellido%></a>
-            <!-- <a href="/perfil"><img style="width: 70px;" src="/images/imagesUsuarios/<%=locals.usuarioLogueado.avatar%>"></a> -->
-            <a href="/perfil"><i class="fas fa-user"></i></a>
-            <a href="/logout"><i class="fas fa-times"></i></a>
-            <%}%>
-            <!-- <a href=""><i class="fas fa-search"></i></a>
-            <a href=""><i class="fas fa-heart"></i></a>
-            <a href=""><i class="fas fa-shopping-basket"></i></a> -->
-        </nav>
-    </div>
-    <nav class="navpri">
-        <STYLE>A {text-decoration: none;} </STYLE>
-        <h5><a href="/">Nosotros</a></h5>
-        <h5><a href="/">Contacto</a></h5>
-        <h5><a href="/productos/">Productos</a></h5>
-        <h5><a href="/productos/nuevoProducto">Nuevo producto</a></h4>
-    </nav>
 </header>

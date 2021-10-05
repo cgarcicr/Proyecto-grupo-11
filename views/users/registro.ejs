@@ -1,20 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <title>Cannabis-Market</title>
-</head>
+    <%- include('../partials/head') %>
 <body >
     <%- include('../partials/header') %>
-    <div class="cuadro">
+    <!-- <div class="cuadro">
         <header class="tituloLogin">
             <h2>Crear una cuenta</h2>
             <hr class="lineaTitulo">
@@ -44,7 +33,7 @@
                         <%})
                     }%>
                     <p>* Correo electrónico</p>
-                    <input class="cajaDatos" type="email" name="correo" value="<%= locals.old && old.correo ? old.correo : '' %>">
+                    <input class="cajaDatos" type="email" name="" value="<%= locals.old && old.correo ? old.correo : '' %>">
                     <% if(locals.errors) {
                         errors.forEach( error =>{
                             if( error.param == 'correo' ){%>
@@ -63,10 +52,6 @@
                     }%>
                     <p>Avatar</p>
                     <input class="cajaDatos" type="file" name="imagenAvatar"><br><br>
-                    <!-- <p>Fecha de nacimiento</p> -->
-                    <!-- <input class="cajaDatos" type="date" name="fechaNacimiento" value="<%= locals.old && old.fechaNacimiento ? old.fechaNacimiento : '' %>"><br> -->
-                    <!-- <input type="checkbox"><span class="recordarme">Recibir ofertas de nuestros productos</span><br><br>
-                    <input type="checkbox"><span class="recordarme">Suscribirse a nuetro boletin de noticias</span><br><br> -->
                     <div class="boton">
                         <button type="submit">Guardar</button>
                     </div>
@@ -75,7 +60,80 @@
             <footer>
             </footer>
         </div>
+    </div> -->
+
+    <div class="main">
+        <div class="shop_top">
+            <div class="container">
+                <form action="/registro" method="POST" enctype="multipart/form-data">
+                        <div class="register-top-grid">
+                                <h4 class="title">INFORMACIÓN PERSONAL</h4>
+                                <div>
+                                    <span>Nombre<label>*</label></span>
+                                    <input type="text" name="nombre" value="<%= locals.old && old.nombre ? old.nombre : '' %>"><br>
+                                    <% if(locals.errors) {
+                                        errors.forEach( error =>{
+                                            if( error.param == 'nombre' ){%>
+                                                <small class="errorValidaciones"><%= error.msg%></small><br><br>
+                                            <%}%>
+                                        <%})
+                                    }%>
+                                </div>
+                                <div>
+                                    <span>Apellido<label>*</label></span>
+                                    <input type="text" name="apellido" value="<%= locals.old && old.apellido ? old.apellido : '' %>"><br>
+                                    <% if(locals.errors) {
+                                        errors.forEach( error =>{
+                                            if( error.param == 'apellido' ){%>
+                                                <small class="errorValidaciones"><%= error.msg%></small><br><br>
+                                            <%}%>
+                                        <%})
+                                    }%>
+                                </div>
+                                <div>
+                                    <span>Correo electrónico<label>*</label></span>
+                                    <input type="text" name="email" value="<%= locals.old && old.email ? old.email : '' %>"><br>
+                                    <% if(locals.errors) {
+                                        errors.forEach( error =>{
+                                            if( error.param == 'email' ){%>
+                                                <small class="errorValidaciones"><%= error.msg%></small>
+                                            <%}%>
+                                        <%})
+                                    }%>
+                                </div>
+                                <div>
+                                    <span>Avatar</span>
+                                    <input type="file" name="imagenAvatar"><br>
+                                </div>
+                                <div class="clear"> </div>
+                        </div>
+                        <div class="clear"> </div>
+                        <div class="register-bottom-grid">
+                                <h4 class="title">INFORMACIÓN DE ACCESO</h4>
+                                <div>
+                                    <span>Contraseña<label>*</label></span>
+                                    <input type="password" name="contrasenia"><br>
+                                    <% if(locals.errors) {
+                                        errors.forEach( error =>{
+                                            if( error.param == 'contrasenia' ){%>
+                                                <small class="errorValidaciones"><%= error.msg%></small><br><br><br>
+                                            <%}%>
+                                        <%})
+                                    }%>
+                                </div>
+                                <div>
+                                    <span>Confirmar contraseña<label>*</label></span>
+                                    <input type="password" name="contrasenia2">
+                                </div>
+                        </div>
+                        <div class="button1">
+                            <input type="submit" name="Submit" class="button" value="Crear cuenta">
+                        </div>
+                </form>
+            </div>
+        </div>
     </div>
+
     <%- include('../partials/footer') %>
 </body>
 </html>

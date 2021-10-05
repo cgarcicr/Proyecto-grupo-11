@@ -51,4 +51,5 @@ app.use( '/logout', require( './src/routes/logout') );
 app.use( '/registro', require( './src/routes/registro' ) );
 app.use( '/productos',require( './src/routes/productos' ) );
 app.use( '/perfil', require( './src/routes/perfil' ) );
-
+app.use( '/listarProductos',require( './src/routes/listarProductos' ) );
+app.use( '/bolsa', require( './src/routes/bolsa' ) );

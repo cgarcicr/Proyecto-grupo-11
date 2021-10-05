@@ -22,13 +22,13 @@ const upload = multer({ storage: storage })
 const validacionFormRegistro = [
     body('nombre').notEmpty().withMessage('El campo nombre no debe estar vacío.'),
     body('apellido').notEmpty().withMessage('El campo apellido no debe estar vacío.'),
-    body('correo').notEmpty().withMessage('El campo correo no debe estar vacío.'),
-    body('correo').isEmail().withMessage('El formato del correo es incorrecto.'),
+    body('email').notEmpty().withMessage('El campo correo no debe estar vacío.'),
+    body('email').isEmail().withMessage('El formato del correo es incorrecto.'),
     body('contrasenia').notEmpty().withMessage('El campo contraseña no debe estar vacío.'),
-    // body('fechaNacimiento').notEmpty().withMessage('La fecha de nacimiento no debe estar vacío.'),
+    body('contrasenia2').notEmpty().withMessage('El campo confirmar contraseña no debe estar vacío.')
 ]
 
-router.get( '/', [guestMiddleware], nuevoRegistro );
+router.get( '/', [ guestMiddleware ], nuevoRegistro );
 router.post( '/', [ upload.single('imagenAvatar'), validacionFormRegistro ], crearRegistro );
 router.get( '/perfilUsuario', perfil);
 
