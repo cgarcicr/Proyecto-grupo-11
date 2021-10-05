@@ -25,7 +25,7 @@
                                 <fieldset class="input">
                                     <p id="login-form-username">
                                         <label for="modlgn_username">Correo</label>
-                                        <input id="modlgn_username" type="text" name="email" class="inputbox" size="18" autocomplete="off">
+                                        <input id="modlgn_username" type="text" name="email" class="inputbox" size="18" autocomplete="off" value="">
                                         <% if(locals.errors) {
                                             errors.forEach( error =>{
                                                 if( error.param == 'email' ){%>
@@ -36,7 +36,7 @@
                                     </p>
                                     <p id="login-form-password">
                                         <label for="modlgn_passwd">Contraseña</label>
-                                        <input id="modlgn_passwd" type="password" name="contrasenia" class="inputbox" size="18" autocomplete="off">
+                                        <input id="modlgn_passwd" type="password" name="contrasenia" class="inputbox" size="18" autocomplete="off" value="">
                                         <% if(locals.errors) {
                                             errors.forEach( error =>{
                                                 if( error.param == 'contrasenia' ){%>
