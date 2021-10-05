@@ -1,62 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <title>Cannabis-Market</title>
-</head>
+<%- include('../partials/head') %>
 <body >
     <%- include('../partials/header') %>
-    <div class="cuadro">
-        <header class="tituloLogin">
-            <h2>Ingrese a su cuenta</h2>
-            <hr class="lineaTitulo">
-        </header>
-        <div class="cuadroFormulario">
-            <section >
-                <form action="/login" method="POST" >
-                    <p>Correo</p>
-                    <input class="cajaDatos" type="text" name="correo">
-                    <% if(locals.errors) {
-                        errors.forEach( error =>{
-                            if( error.param == 'correo' ){%>
-                                <small class="errorValidaciones"><%= error.msg%></small><br><br>
-                            <%}%>
-                        <%})
-                    }%>
-                    <p>Contraseña</p>
-                    <input class="cajaDatos" type="password" name="contrasenia"><br>
-                    <% if(locals.errors) {
-                        errors.forEach( error =>{
-                            if( error.param == 'contrasenia' ){%>
-                                <small class="errorValidaciones"><%= error.msg%></small><br><br>
-                            <%}%>
-                        <%})
-                    }%>
-                    <input type="checkbox" name="recordarme"><span class="recordarme">Recordame</span>
-                    <div class="centrarEnlace">
-                        <a class="enlace" href="#">¿Olvidaste tu contraseña?</a>
-                    </div><br>
-                    <div class="boton">
-                        <button type="submit">Ingresar</button>
+    <div class="main">
+        <div class="shop_top">
+            <div class="container">
+                <div class="col-md-6">
+                    <div class="login-page">
+                        <h4 class="title">Nuevo usuario</h4>
+                        <p>Es obligatorio completar el formulario de inscripción en todos sus campos con datos válidos para poder utilizar los servicios que brinda CannabisMarket. El futuro Usuario deberá completarlo con su información personal de manera exacta, precisa y verdadera ("Datos Personales") y asume el compromiso de actualizar los Datos Personales conforme resulte necesario.</p>
+                        <br>
+                        <div class="button1">
+                            <a href="/registro"><input type="submit" name="Submit" value="Crear una cuenta"></a>
+                        </div>
+                        <div class="clear"></div>
                     </div>
-                </form>
-            </section>
-            <footer>
-                <hr>
-                <div class="centrarEnlace">
-                    <a class="enlace" href="/registro">¿Sin cuenta? Crea una aquí</a>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="login-title">
+                            <h4 class="title">Usuarios registrados</h4>
+                        <div id="loginbox" class="loginbox">
+                            <form action="/login" method="POST" name="login" id="login-form">
+                                <fieldset class="input">
+                                    <p id="login-form-username">
+                                        <label for="modlgn_username">Correo</label>
+                                        <input id="modlgn_username" type="text" name="email" class="inputbox" size="18" autocomplete="off" value="andrescruz5193@gmail.com">
+                                        <% if(locals.errors) {
+                                            errors.forEach( error =>{
+                                                if( error.param == 'email' ){%>
+                                                    <small class="errorValidaciones"><%= error.msg%></small><br><br>
+                                                <%}%>
+                                            <%})
+                                        }%>
+                                    </p>
+                                    <p id="login-form-password">
+                                        <label for="modlgn_passwd">Contraseña</label>
+                                        <input id="modlgn_passwd" type="password" name="contrasenia" class="inputbox" size="18" autocomplete="off" value="123456">
+                                        <% if(locals.errors) {
+                                            errors.forEach( error =>{
+                                                if( error.param == 'contrasenia' ){%>
+                                                    <small class="errorValidaciones"><%= error.msg%></small><br><br>
+                                                <%}%>
+                                            <%})
+                                        }%>
+                                    </p>
+                                    <div class="remember">
+                                        <p id="login-form-remember">
+                                        <label for="modlgn_remember"><a href="#">Olvidó su contraseña ? </a></label>
+                                        </p>
+                                        <input type="submit" name="Submit" class="button" value="Ingresar">
+                                        <div class="clear"></div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
                 </div>
-            </footer>
+                </div>
+            </div>
         </div>
-    </div>
     <%- include('../partials/footer') %>
 </body>
 </html>

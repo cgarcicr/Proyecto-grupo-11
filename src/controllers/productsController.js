@@ -4,38 +4,32 @@
 const { request, response } = require('express');
 const path = require('path');
 const fs = require('fs');
-// let productos = fs.readFileSync( __dirname + './../database/model/productos.json', 'utf-8' );
-// let productosJson = JSON.parse( productos );
+const { validationResult} = require('express-validator');
 const productos = path.join( __dirname, './../database/model/productos.json' );
 const productosJson = JSON.parse( fs.readFileSync(productos),'utf-8' );
+const db = require('../../database/models');
 
 let nuevoProducto = ( req, res = response)=>{
     res.render('products/nuevoProducto');
 };
 
 let crearProducto = ( req = request, res = response)=>{
-    let listaProductos = productosJson;
-    let { nombre, descripcion, precio, imagenProducto } = req.body;
-    if( req.file ){
-        let newProducto = {
-            id: listaProductos.length + 1,
-            nombre: nombre,
-            descripcion: descripcion,
-            precio: '$' + precio,
-            imagen: `/images/imagesProductos/${req.file.filename}`
-        }
-        listaProductos.push( newProducto );
-            fs.writeFile('./src/database/model/productos.json', JSON.stringify( listaProductos, null, ' ' ), ( err )=>{
-                if( err ){
-                    console.log( 'El error es: ' + err);
-                }else{
-                    console.log( 'Actualizado' );
-                }
-            });
-        res.redirect('/productos');
-    }else{
-        res.render('products/nuevoProducto', { });
+    let errors = validationResult( req );
+
+    if( !errors.isEmpty() ){
+        return res.render('products/nuevoProducto', { errors: errors.array(), old: req.body });
     }
+
+    db.Producto.create({
+        nombre: req.body.nombre,
+        descripcion: req.body.descripcion,
+        imagen: req.file.filename,
+        precio: req.body.precio,
+        stock: req.body.stock,
+        id_categoria: req.body.id_categoria
+    }).then( resp =>{
+        return res.render( 'products/nuevoProducto' );
+    });
 
 }
 
@@ -85,21 +79,36 @@ let borrarProducto = ( req = request, res = response )=>{
 }
 
 let listarProductos = ( req, res = response )=>{
-    let listaProductos = productosJson;
-    res.render( 'products/listarProductos',
-    {
-        ok: true,
-        listaProductos
+
+    db.Producto.findAll({
+        where: {
+            id_categoria : req.params.id
+        }
+    }
+    )
+    .then( resp =>{
+        res.render( 'products/listarProductos',
+        {
+            ok: true,
+            listaProductos: resp,
+            id_categoria: req.params.id
+        });
     });
 }
 
 let obtenerProducto = ( req = request, res = response)=>{
     let { id } = req.params;
-    let producto = productosJson.filter( resp => resp.id == id );
-    res.render( "products/detalleProducto",
-    {
-        ok:true,
-        producto
+
+    db.Producto.findOne({
+        where: {
+            id: id
+        }
+    }).then( resp =>{
+        res.render( "products/detalleProducto",
+        {
+            ok:true,
+            producto: resp
+        });
     });
 }
 

@@ -5,7 +5,7 @@ const { obtenerLogin, procesarLogin } = require('../controllers/loginController'
 const guestMiddleware = require('../../middlewares/guestMiddleware');
 
 let validacionLogin = [
-    body('correo').isEmail().withMessage('Correo inválido'),
+    body('email').isEmail().withMessage('Correo inválido'),
     body('contrasenia').isLength({min:5}).withMessage('La contraseña debe tener mínimo 5 caracteres')
 ]
 

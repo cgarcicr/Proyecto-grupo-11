@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cannabis-Market</title>
-        <link rel="stylesheet" href="/css/styles.css">
-        <link rel="stylesheet" href="/css/normalize.css">
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    </head>
+    <%- include('../partials/head') %>
 <body>
     <%- include('../partials/header') %>
-        <div class="contador">
+        <!-- <div class="contador">
             <p>Cantidad productos: <%= listaProductos.length%></p>
-        </div>
-        <div class="orderProductos">
+        </div> -->
+        <!-- <div class="orderProductos">
             <% listaProductos.forEach( ( producto) =>{ %>
                 <article class="card-productos">
                 <a href="/productos/obtenerProducto/<%=producto.id%>">
@@ -29,7 +18,60 @@
                 </a>
             </article>
             <%});%>
-        </div>
+        </div> -->
+        <br><br><%if(id_categoria == 1){%>
+            <h3 class="m_3">Categoria orales</h3>
+        <%}else if(id_categoria == 2){%>
+            <h3 class="m_3">Categoria Complemento nutricional</h3>
+        <%}else if(id_categoria == 3){%>
+            <h3 class="m_3">Categoria Estéticos</h3>
+        <%}else if(id_categoria == 4){%>
+            <h3 class="m_3">Categoria Tópicos</h3>
+        <%}else if(id_categoria == 5){%>
+            <h3 class="m_3">Categoria Animales</h3>
+        <%}%>
+        <div class="main">
+            <div class="shop_top">
+            <div class="container">
+                <div class="row shop_box-top">
+                <% listaProductos.forEach( ( producto) =>{ %>
+                    <div class="col-md-3 shop_box"><a href="single.html">
+                            <a href="/productos/obtenerProducto/<%=producto.id%>">
+                                <img style="margin-top: 20px;" src="/images/imagesProductos/<%=producto.imagen%>" class="img-responsive" alt=""/>
+                            </a>
+                            <!-- <span class="new-box">
+                            <span class="new-label">New</span>
+                            </span> -->
+                            <!-- <span class="sale-box">
+                            <span class="sale-label">Sale!</span>
+                            </span> -->
+                            <div class="shop_desc">
+                            <h3><a href="/productos/obtenerProducto/<%=producto.id%>"><%=producto.nombre%></a></h3>
+                            <%if(producto.id_categoria == 1){%>
+                                <p>Categoria orales</p>
+                            <%}else if(producto.id_categoria == 2){%>
+                                <p>Complemento nutricional</p>
+                            <%}else if(producto.id_categoria == 3){%>
+                                <p>Estéticos</p>
+                            <%}else if(producto.id_categoria == 4){%>
+                                <p>Tópicos</p>
+                            <%}else if(producto.id_categoria == 4){%>
+                                <p>Animales</p>
+                            <%}%>
+                            <!-- <span class="reducedfrom">$<%=producto.precio%></span> -->
+                            <span class="actual">$<%=producto.precio%></span><br>
+                            <ul class="buttons">
+                                <li class="cart"><a href="/bolsa/agregarProducto/<%=producto.id%>">Llevar al carro</a></li>
+                                <li class="shop_btn"><a href="/productos/obtenerProducto/<%=producto.id%>">Leer más</a></li>
+                                <div class="clear"> </div>
+                            </ul>
+                        </div>
+                    </a></div>
+                    <%});%>
+                </div>
+            </div>
+            </div>
+            </div>
 
     <%- include('../partials/footer') %>
 </body>

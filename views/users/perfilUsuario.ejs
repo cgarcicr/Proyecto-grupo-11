@@ -1,30 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
-    <title>Cannabis-Market</title>
-</head>
+    <%- include('../partials/head') %>
 <body >
     <%- include('../partials/header') %>
-    <div class="cuadro">
-        <header class="tituloLogin">
-            <p>Perfil de usuario</p>
-            <hr class="lineaTitulo">
-        </header>
-        <div class="perfilMargin">
-            <h2>Hola <%= usuario.nombre %> <%= usuario.apellido %></h2>
-            <img style="width: 200px;" src="/images/imagesUsuarios/<%=usuario.avatar%>">
-            <p>Correo: <%=usuario.correo%></p>
+
+    <div class="main">
+        <div class="shop_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="map">
+                            <img style="width: 300px;" src="/images/imagesUsuarios/<%=locals.usuarioLogueado.avatar%>">
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <h4 class="title">INFORMACIÓN PERSONAL</h4>
+                        <div class="address">
+                            <p>Nombre: <%= usuario.nombre.toUpperCase() %></p>
+                            <p>Apellido: <%= usuario.apellido.toUpperCase() %></p>
+                            <p>Correo: <%=usuario.email%></p>
+                            <p>Teléfono: <%=usuario.telefono%></p>
+                            <p>Documento: <%=usuario.documento%></p>
+                            <p>Fecha nacimiento: <%=usuario.fecha_nacimiento%></p>
+                            <p>Direccion: <%=usuario.direccion%></p>
+                            <p>Ciudad: <%=usuario.ciudad%></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-md-12 contact">
+                    <form method="post" action="/perfil/editarPerfil?_method=PUT">
+                        <div class="to">
+                            <p>Nombre</p>
+                            <input style="color: black;" type="text" name="nombre" value="<%= usuario.nombre.toUpperCase() %>" placeholder="Nombre">
+                            <div class="clear"></div>
+                            <% if(locals.errors) {
+                                errors.forEach( error =>{
+                                    if( error.param == 'nombre' ){%>
+                                        <small class="errorValidaciones"><%= error.msg%></small><br><br>
+                                    <%}%>
+                                <%})
+                            }%>
+                            <p>Documento</p>
+                            <input style="color: black;" type="text" name="documento" value="<%= usuario.documento %>" placeholder="Documento">
+                            <p>Dirección</p>
+                            <input style="color: black;" type="text" name="direccion" value="<%= usuario.direccion %>" placeholder="Dirección">
+                            <p>Fecha nacimiento</p>
+                            <input style="color: black;" type="date" name="fecha_nacimiento" value="<%= usuario.fecha_nacimiento %>" placeholder="Fecha nacimiento">
+                            <div class="clear"></div>
+                            <% if(locals.errors) {
+                                errors.forEach( error =>{
+                                    if( error.param == 'fecha_nacimiento' ){%>
+                                        <small class="errorValidaciones"><%= error.msg%></small><br><br>
+                                    <%}%>
+                                <%})
+                            }%>
+                        </div>
+                        <div class="to">
+                            <p>Apellido</p>
+                            <input style="color: black;" type="text" name="apellido" value="<%= usuario.apellido.toUpperCase() %>" placeholder="Apellido">
+                            <div class="clear"></div>
+                            <% if(locals.errors) {
+                                errors.forEach( error =>{
+                                    if( error.param == 'apellido' ){%>
+                                        <small class="errorValidaciones"><%= error.msg%></small><br><br>
+                                    <%}%>
+                                <%})
+                            }%>
+                            <p>Teléfono</p>
+                            <input style="color: black;" type="text" name="telefono" value="<%= usuario.telefono %>" placeholder="Telefono">
+                            <p>Ciudad</p>
+                            <input style="color: black;" type="text" name="ciudad" value="<%= usuario.ciudad %>" placeholder="ciudad">
+                            <p>Correo</p>
+                            <input style="color: #093695;" type="text" name="email" value="<%= usuario.email %>" placeholder="Correo" >
+                            <div class="clear"></div>
+                            <% if(locals.errors) {
+                                errors.forEach( error =>{
+                                    if( error.param == 'email' ){%>
+                                        <small class="errorValidaciones"><%= error.msg%></small><br><br>
+                                    <%}%>
+                                <%})
+                            }%>
+                            <div class="form-submit">
+                                <input type="submit" id="submit" value="Actualizar información"><br>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
         </div>
     </div>
+
+
     <%- include('../partials/footer') %>
 </body>
 </html>

@@ -5,7 +5,7 @@ function userLoggedMiddleware( req, res, next){
     res.locals.estaLogueado = false;
 
     let correoCookie = req.cookies.correoUsuario;
-    let usuarioCookie = LoginModel.obtenerUsuarioPorEmail('correo', correoCookie);
+    let usuarioCookie = LoginModel.obtenerUsuarioPorEmail('email', correoCookie);
 
     if( usuarioCookie ){
         req.session.usuarioLogueado = usuarioCookie;
@@ -13,6 +13,7 @@ function userLoggedMiddleware( req, res, next){
 
     if( req.session.usuarioLogueado ){
         res.locals.estaLogueado = true;
+        res.locals.rol = req.session.usuarioLogueado.rol;
         res.locals.usuarioLogueado = req.session.usuarioLogueado;
     }
 
